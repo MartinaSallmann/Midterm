@@ -9,6 +9,8 @@ import java.util.HashSet;
 import static org.junit.jupiter.api.Assertions.*;
 
 class EinkaufslisteAppTest {
+
+
     public ArrayList<Einkauf> uebung;
     public HashSet<Einkauf> uebung2;
 
@@ -23,6 +25,7 @@ class EinkaufslisteAppTest {
         uebung2 = new HashSet<>();
         uebung2.add(nummer1);
         uebung2.add(nummer2);
+
     }
 
     @Test
@@ -31,7 +34,7 @@ class EinkaufslisteAppTest {
     }
 
     @Test
-    void sum2() {
+    void testSum() {
         assertEquals(EinkaufslisteApp.sum(uebung2),5);
     }
 }
